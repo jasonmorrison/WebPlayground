@@ -425,6 +425,7 @@
                                                             <a role="menuitem" tabindex="-1" href="<%: Url.Action("OurTeam", "Company") %>">Our Team
                                                             </a>
                                                         </li>--%>
+                                                        <%-- Our team should live in the about us area.  Add a /Company/EmployeeProfile/Id for individual employee details --%>
                                                     </ul>
                                                 </li>
                                                 <li class="dropdown">
@@ -487,6 +488,7 @@
                                                             <a role="menuitem" tabindex="-1" href="<%: Url.Action("FileNetSoftware", "Solutions") %>">IBM FileNet Software
                                                             </a>
                                                         </li>
+                                                        <%-- Add a solutions portfolio page with a Services/Portfolio/ID where id brings up a solution profile --%>
                                                     </ul>
                                                 </li>
                                                 <li class="dropdown">
