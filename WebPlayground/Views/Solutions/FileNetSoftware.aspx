@@ -44,10 +44,11 @@
                     <h3>FileNet (Better title?)
                     </h3>
                     <p>
+                        <img src="<%: Url.Content("~/images/FFX/filenet-logo.jpg") %>" style="float:right;" class="img-responsive centered" alt="FileNet Logo">
                         IBM FileNet pioneered the document-imaging, COLD and workflow markets and continues to 
                         deliver superior products that allow you to harness the power of information. IBM FileNet 
                         delivers a family of products integrating imaging, electronic document management and 
-                        workflow software.
+                        workflow software.                        
                     </p>
                     <p>
                         IBM FileNet partners with leading value-added reseller and systems integrators such as 
