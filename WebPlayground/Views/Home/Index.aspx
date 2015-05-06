@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
-    Index
+    Home
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -13,8 +13,6 @@
     <!-- page wrapper start -->
     <!-- ================ -->
     <div class="page-wrapper">
-
-        
 
         <!-- banner start -->
         <!-- ================ -->
@@ -30,7 +28,7 @@
                     <div class="slider-banner">
                         <ul>
                             <!-- slide 1 start -->
-                            <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Premium HTML5 template">
+                            <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Professional Services">
 
                                 <!-- main image -->
                                 <img src="<%: Url.Content("~/Content/iDea/images/slider-1-slide-1.jpg") %>" alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
@@ -43,7 +41,7 @@
                                     data-start="1200"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    Premium HTML5 template
+                                    Professional Services
                                 </div>
 
                                 <!-- LAYER NR. 2 -->
@@ -65,7 +63,7 @@
                                     data-start="1600"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    100% Responsive
+                                    End-to-end planning and execution
                                 </div>
 
                                 <!-- LAYER NR. 4 -->
@@ -87,7 +85,7 @@
                                     data-start="1800"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    Bootstrap Based
+                                    Integrated, extendible solutions
                                 </div>
 
                                 <!-- LAYER NR. 6 -->
@@ -109,7 +107,7 @@
                                     data-start="2000"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    Packed Full of Features
+                                    IBM Certified Specialists
                                 </div>
 
                                 <!-- LAYER NR. 8 -->
@@ -131,7 +129,7 @@
                                     data-start="2200"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    Very Easy to Customize
+                                    Top tier support and maintenance
                                 </div>
 
                                 <!-- LAYER NR. 10 -->
@@ -160,7 +158,7 @@
                             <!-- slide 1 end -->
 
                             <!-- slide 2 start -->
-                            <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Powerful Bootstrap Theme">
+                            <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Ready-Made Solutions">
 
                                 <!-- main image -->
                                 <img src="<%: Url.Content("~/Content/iDea/images/slider-1-slide-2.jpg") %>" alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
@@ -173,7 +171,7 @@
                                     data-start="1200"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    Powerful Bootstrap Theme
+                                    Ready-Made Solutions
                                 </div>
 
                                 <!-- LAYER NR. 2 -->
@@ -195,7 +193,7 @@
                                     data-start="1600"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    W3C Validated
+                                    SmartPAL permitting and licensing vehicle
                                 </div>
 
                                 <!-- LAYER NR. 4 -->
@@ -217,7 +215,7 @@
                                     data-start="1800"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    Unlimited layout variations
+                                    Hosted locally or in the cloud
                                 </div>
 
                                 <!-- LAYER NR. 6 -->
@@ -239,7 +237,7 @@
                                     data-start="2000"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    Google Maps
+                                    Step-by-step wizards and e-forms
                                 </div>
 
                                 <!-- LAYER NR. 8 -->
@@ -261,7 +259,7 @@
                                     data-start="2200"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    Very Flexible
+                                    Customizeable and scalable
                                 </div>
 
                                 <!-- LAYER NR. 10 -->
@@ -290,7 +288,7 @@
                             <!-- slide 2 end -->
 
                             <!-- slide 3 start -->
-                            <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Powerful Bootstrap Theme">
+                            <li data-transition="random" data-slotamount="7" data-masterspeed="500" data-saveperformance="on" data-title="Conetne Management Specialists">
 
                                 <!-- main image -->
                                 <img src="<%: Url.Content("~/Content/iDea/images/slider-1-slide-3.jpg") %>" alt="kenburns" data-bgposition="left center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-bgfit="100" data-bgfitend="115" data-bgpositionend="right center">
@@ -303,7 +301,7 @@
                                     data-start="1200"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    Clean &amp; Unique Design
+                                    Conetne Management Specialists
                                 </div>
 
                                 <!-- LAYER NR. 2 -->
@@ -325,7 +323,7 @@
                                     data-start="1600"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    After Sale Support
+                                    IBM FileNet and DataCap certified
                                 </div>
 
                                 <!-- LAYER NR. 4 -->
@@ -347,7 +345,7 @@
                                     data-start="1800"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    Crystal Clean Code
+                                    Case management
                                 </div>
 
                                 <!-- LAYER NR. 6 -->
@@ -369,7 +367,7 @@
                                     data-start="2000"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    Crossbrowser Compatible
+                                    Business process management
                                 </div>
 
                                 <!-- LAYER NR. 8 -->
@@ -391,7 +389,7 @@
                                     data-start="2200"
                                     data-end="9400"
                                     data-endspeed="600">
-                                    Latest Technologies Used
+                                    Integration services
                                 </div>
 
                                 <!-- LAYER NR. 10 -->
@@ -407,7 +405,7 @@
 
                                 <!-- LAYER NR. 11 -->
                                 <div class="tp-caption sfr"
-                                    data-x="right" data-hoffset="-660"
+                                    data-x="right" data-hoffset="-512"
                                     data-y="center"
                                     data-speed="600"
                                     data-start="2700"
@@ -416,7 +414,7 @@
                                     data-autoplayonlyfirsttime="false"
                                     data-nextslideatend="true">
                                     <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src='https://www.youtube.com/embed/v1uyQZNg2vE?enablejsapi=1&amp;html5=1&amp;hd=1&amp;wmode=opaque&amp;controls=1&amp;showinfo=0;rel=0;' width='640' height='360' style='width: 640px; height: 360px;'></iframe>
+                                        <iframe class="embed-responsive-item" src='https://www.youtube.com/embed/v1uyQZNg2vE?enablejsapi=1&amp;html5=1&amp;hd=1&amp;wmode=opaque&amp;controls=1&amp;showinfo=0;rel=0;' width='512' height='288' style='width: 512px; height: 288px;'></iframe>
                                     </div>
                                 </div>
 
@@ -442,9 +440,15 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="call-to-action">
-                            <h1 class="title">iDea Clean and Unique Design</h1>
-                            <p>Sed ut Perspiciatis Unde Omnis Iste Sed ut perspiciatis unde omnis iste natu error sit  voluptatem accusan tium </p>
-                            <a class="btn btn-white more" data-toggle="modal" data-target="#myModal">Read more <i class="pl-10 fa fa-info"></i>
+                            <h1 class="title">Fairfax Data Systems</h1>
+                            <h3 style="margin-top: 0px;">Driving Content Forward</h3>
+                            <p>
+                                From full content management solutions to on-site staff enhancement, Fairfax Data Systems provides 
+                                services and solutions to fill your business needs
+                            </p>
+                            <a class="btn btn-white more" href="<%: Url.Action("Index", "Company") %>">Read more <i class="pl-10 fa fa-info"></i></a>
+                            <%-- This could just be a link to services instead of a dialog --%>
+                            <%--<a class="btn btn-white more" data-toggle="modal" data-target="#myModal">Read more <i class="pl-10 fa fa-info"></i>
                             </a>
 
                             <!-- Modal -->
@@ -471,9 +475,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>--%>
                             or
-								<a href="page-contact.html" class="btn btn-default contact">Contact us <i class="pl-10 fa fa-phone"></i></a>
+								<a href="<%: Url.Action("ContactUs", "Company") %>" class="btn btn-default contact">Contact us <i class="pl-10 fa fa-phone"></i></a>
                         </div>
                     </div>
                 </div>
@@ -491,32 +495,35 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 class="text-center title">Features</h1>
+                            <h1 class="text-center title">Solutions</h1>
                             <div class="separator"></div>
-                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-center">
+                                Fully customizable solutions can meet your every business need.<br />
+                                Our goal is an effective unified solution to make alleviate the burden of day to day tasks.
+                            </p>
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="box-style-1 white-bg object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="0">
                                         <i class="fa fa-leaf"></i>
-                                        <h2>Clean Design and Code</h2>
-                                        <p>Voluptatem ad provident non <a href="#">repudiandae</a> veritatis beatae cupiditate amet reiciendis.</p>
-                                        <a href="page-services.html" class="btn-default btn">Read More</a>
+                                        <h2>SmartPAL Portal</h2>
+                                        <p>Electronic Permits, Applications and Licenses (PAL) streamlines your business processes</p>
+                                        <a href="<%: Url.Action("SmartPAL", "Solutions") %>" class="btn-default btn">Read More</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="box-style-1 white-bg object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="200">
                                         <i class="fa fa-laptop"></i>
-                                        <h2>Very Flexible</h2>
-                                        <p>Iure sequi unde hic. Sapiente quaerat labore sequi inventore veritatis cumque.</p>
-                                        <a href="page-services.html" class="btn-default btn">Read More</a>
+                                        <h2>eRegulations</h2>
+                                        <p>Add transparency and increase transparency of the regulatory process.</p>
+                                        <a href="<%: Url.Action("eRegulations", "Solutions") %>" class="btn-default btn">Read More</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="box-style-1 white-bg object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="400">
                                         <i class="fa fa-sitemap"></i>
-                                        <h2>Latest Technologies</h2>
-                                        <p>Inventore dolores aut laboriosam cum consequuntur delectus sequi! Eum est.</p>
-                                        <a href="page-services.html" class="btn-default btn">Read More</a>
+                                        <h2>IBM FileNet</h2>
+                                        <p>Full service content management and foundational application platform.</p>
+                                        <a href="<%: Url.Action("FileNetSoftware", "Solutions") %>" class="btn-default btn">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -537,22 +544,32 @@
                     <div class="col-md-12">
                         <h1 class="text-center">About Us</h1>
                         <div class="separator"></div>
-                        <p class="lead text-center">Lorem ipsum dolor sit amet laudantium molestias similique.<br>
-                            Quisquam incidunt ut laboriosam.</p>
+                        <p class="lead text-center">
+                            Fairfax delivers effective content management solutions that help organizations
+                            <br />
+                            access the right information at the right time to minimize risk and optimize business outcomes.
+                        </p>
                         <br>
                         <div class="row">
                             <div class="col-md-6">
-                                <h2 class="title">iDea - Responsive Website Theme</h2>
+                                <h2 class="title">Fairfax - Effective Solutions</h2>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <img src="<%: Url.Content("~/Content/iDea/images/section-image-2.png") %>" alt="">
                                     </div>
                                     <div class="col-md-6">
-                                        <p>Quo soluta provident, quod reiciendis. Dolores nam totam aut illum ex ratione harum molestias maxime minima tempore, possimus, laudantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                        <p>
+                                            We partner with IBM, a leading provider of document imaging, document management, e-processing and 
+                                            e-business technologies, to build solutions using their suite of best-of-breed ECM products.
+                                        </p>
                                     </div>
                                 </div>
-                                <p>Esse sequi veniam, assumenda voluptate necessitatibus ipsa dicta vero, minima natus cum cupiditate magnam et placeat quo adipisci.</p>
-                                <a href="page-about.html" class="btn btn-white">Learn More</a>
+                                <p>
+                                    Our IBM FileNet and Datacap Certified team has the industry experience, project management 
+                                    and technical skills to help customers succeed in meeting their business objectives through 
+                                    intelligent deployment and support of solutions built on ECM.
+                                </p>
+                                <a href="<%: Url.Action("CompanyProfile", "Company") %>" class="btn btn-white">Learn More</a>
                                 <div class="space hidden-md hidden-lg"></div>
                             </div>
                             <div class="col-md-6">
@@ -561,13 +578,17 @@
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                                    <i class="fa fa-bold"></i>Bootstrap Based
+                                                    <i class="fa fa-bold"></i>Increase Efficiency
                                                 </a>
                                             </h4>
                                         </div>
                                         <div id="collapseOne" class="panel-collapse collapse in">
                                             <div class="panel-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad 
+                                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa 
+                                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid 
+                                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft 
+                                                beer labore wes anderson cred nesciunt sapiente ea proident.
                                             </div>
                                         </div>
                                     </div>
@@ -575,13 +596,17 @@
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
-                                                    <i class="fa fa-leaf"></i>Clean &amp; powerful code
+                                                    <i class="fa fa-leaf"></i>Improve Customer Experiance
                                                 </a>
                                             </h4>
                                         </div>
                                         <div id="collapseTwo" class="panel-collapse collapse">
                                             <div class="panel-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad 
+                                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa 
+                                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid 
+                                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft 
+                                                beer labore wes anderson cred nesciunt sapiente ea proident.
                                             </div>
                                         </div>
                                     </div>
@@ -589,13 +614,17 @@
                                         <div class="panel-heading">
                                             <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
-                                                    <i class="fa fa-html5"></i>HTML5/CSS3
+                                                    <i class="fa fa-html5"></i>Go Green
                                                 </a>
                                             </h4>
                                         </div>
                                         <div id="collapseThree" class="panel-collapse collapse">
                                             <div class="panel-body">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad 
+                                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa 
+                                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid 
+                                                single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft 
+                                                beer labore wes anderson cred nesciunt sapiente ea proident.
                                             </div>
                                         </div>
                                     </div>
@@ -611,17 +640,17 @@
 
         <!-- section start -->
         <!-- ================ -->
-        <div class="section parallax light-translucent-bg parallax-bg-3">
+        <div class="section parallax light-translucent-bg parallax-bg-4">
             <div class="container">
                 <div class="call-to-action">
                     <div class="row">
                         <div class="col-md-8">
-                            <h1 class="title text-center">Clean &amp; Powerful Bootstrap Theme</h1>
-                            <p class="text-center">Sed ut Perspiciatis Unde Omnis Iste Sed ut sit  voluptatem accusan tium </p>
+                            <h1 class="title text-center">Powerful &amp; Effective Solutions</h1>
+                            <p class="text-center">Customized to meet your specific business needs</p>
                         </div>
                         <div class="col-md-4">
                             <div class="text-center">
-                                <a href="#" class="btn btn-default btn-lg">Purchase</a>
+                                <a href="#" class="btn btn-default btn-lg">Ask About Pricing</a>
                             </div>
                         </div>
                     </div>
@@ -637,10 +666,12 @@
                 <div class="row">
                     <div class="col-md-12">
 
-                        <h1 class="text-center">Why Choose iDea</h1>
+                        <h1 class="text-center">Why Choose Fairfax</h1>
                         <div class="separator"></div>
-                        <p class="lead text-center">Lorem ipsum dolor sit amet. Maiores, odio ut deleniti doloremque ad at praesentium<br>
-                            laudantium molestias similique. Quisquam incidunt ut laboriosam.</p>
+                        <p class="lead text-center">
+                            Tag line here I really couldnt think of anything  I really couldnt think of anything <br>
+                            I really couldnt think of anything I really couldnt think of anything 
+                        </p>
 
                         <!-- Tabs start -->
                         <!-- ================ -->
@@ -827,7 +858,7 @@
 
         <!-- section start -->
         <!-- ================ -->
-        <div class="section clearfix">
+        <%--<div class="section clearfix">
 
             <div class="container">
                 <div class="row">
@@ -971,12 +1002,12 @@
                 </div>
             </div>
 
-        </div>
+        </div>--%>
         <!-- section end -->
 
         <!-- section start -->
         <!-- ================ -->
-        <div class="section gray-bg text-muted footer-top clearfix">
+        <%--<div class="section gray-bg text-muted footer-top clearfix">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -1023,10 +1054,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--%>
         <!-- section end -->
-
-        
 
     </div>
     <!-- page-wrapper end -->

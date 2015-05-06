@@ -23,24 +23,33 @@ namespace WebPlayground.Controllers
             return View();
         }
 
-        public ActionResult DBExportCapture()
+        public ActionResult SmartPAL()
         {
             return View();
         }
 
-        public ActionResult DocumentComparison()
+        public ActionResult eRegulations()
         {
             return View();
         }
+        //public ActionResult DBExportCapture()
+        //{
+        //    return View();
+        //}
+
+        //public ActionResult DocumentComparison()
+        //{
+        //    return View();
+        //}
 
         public ActionResult FileNetSoftware()
         {
             return View();
         }
 
-        public ActionResult NavisionConnector()
-        {
-            return View();
-        }
+        //public ActionResult NavisionConnector()
+        //{
+        //    return View();
+        //}
     }
 }

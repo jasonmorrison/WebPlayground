@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <ol class="breadcrumb">
-                        <li><i class="fa fa-home pr-10"></i><a href="<%: Url.Action("Index", "Home") %>">Home</a></li>
+                        <li><i class="fa fa-home pr-10"></i><a href="<%: Url.Action("CompanyProfile", "Company") %>">Home</a></li>
                         <li class="active">Certifications</li>
                     </ol>
                 </div>

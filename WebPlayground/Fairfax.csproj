@@ -44,6 +44,8 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -182,12 +184,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\CompanyController.cs" />
+    <Compile Include="Controllers\GovernmentController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
-    <Compile Include="Controllers\SupportController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\SolutionsController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -403,18 +406,35 @@
     <Content Include="Content\iDea\skins\red.css" />
     <Content Include="Content\iDea\skins\yellow.css" />
     <Content Include="Content\iDea\style.css" />
+    <Content Include="Content\images\parallax-bg-4.png" />
     <Content Include="Content\images\parallax-bg-2.jpg" />
     <Content Include="Content\images\parallax-bg-3.jpg" />
     <Content Include="Content\images\parallax-bg.jpg" />
+    <Content Include="Content\StyleSheet1.css">
+      <DependentUpon>StyleSheet1.scss</DependentUpon>
+    </Content>
+    <Content Include="Content\StyleSheet1.min.css">
+      <DependentUpon>StyleSheet1.css</DependentUpon>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Images\Bootstrap\glyphicons-halflings-regular.eot" />
     <Content Include="Images\Bootstrap\glyphicons-halflings-regular.ttf" />
     <Content Include="Images\Bootstrap\glyphicons-halflings-regular.woff" />
     <Content Include="Images\Bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\FFX\CapturePath.gif" />
+    <Content Include="Images\FFX\Compare_Plug-In_Menu.gif" />
+    <Content Include="Images\FFX\datamask-logo.gif" />
+    <Content Include="Images\FFX\DBExport.gif" />
     <Content Include="Images\FFX\dog.png" />
+    <Content Include="Images\FFX\ffx_icon.ico" />
+    <Content Include="Images\FFX\ffx-dv-logo.gif" />
     <Content Include="Images\FFX\ffx-logo-top.gif" />
+    <Content Include="Images\FFX\FFX-logo.jpg" />
     <Content Include="Images\FFX\ffx-logo.png" />
+    <Content Include="Images\FFX\FFX-logo_gray.png" />
+    <Content Include="Images\FFX\filenet-logo.jpg" />
+    <Content Include="Images\FFX\Navision.gif" />
     <Content Include="Images\FFX\ProfileImage.png" />
     <Content Include="Content\iDea\fonts\font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\iDea\fonts\font-awesome\fonts\fontawesome-webfont.ttf" />
@@ -464,6 +484,12 @@
     <Content Include="Content\iDea\bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Scripts\iDea\plugins\jquery-1.11.1.min.map" />
     <Content Include="Content\iDea\plugins\jquery-1.11.1.min.map" />
+    <Content Include="Images\FFX\P8 Navision Connector Brochure.pdf" />
+    <Content Include="Content\StyleSheet1.scss" />
+    <Content Include="Content\StyleSheet1.css.map">
+      <DependentUpon>StyleSheet1.css</DependentUpon>
+    </Content>
+    <None Include="Properties\PublishProfiles\FTP Publisher.pubxml" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\iDea\bootstrap\bootstrap.js" />
     <Content Include="Scripts\iDea\bootstrap\bootstrap.min.js" />
@@ -563,28 +589,24 @@
     <Content Include="Views\Company\ContactUs.aspx" />
     <Content Include="Views\Company\CareerOpportunities.aspx" />
     <Content Include="Views\Company\OurTeam.aspx" />
+    <Content Include="Views\Government\Index.aspx" />
+    <Content Include="Views\Home\Index.aspx" />
     <Content Include="Views\News\Index.aspx" />
-    <Content Include="Views\Products\DVClientApplication.aspx" />
-    <Content Include="Views\Products\ComparePlugin.aspx" />
-    <Content Include="Views\Products\NavisionConnector.aspx" />
+    <Content Include="Views\Products\Index.aspx" />
     <Content Include="Views\Services\Overview.aspx" />
     <Content Include="Views\Services\Implementation.aspx" />
     <Content Include="Views\Services\DevelopmentAndIntegration.aspx" />
     <Content Include="Views\Services\Consulting.aspx" />
     <Content Include="Views\Services\SupportOptions.aspx" />
     <Content Include="Views\Services\Migrations.aspx" />
+    <Content Include="Views\Solutions\SmartPAL.aspx" />
+    <Content Include="Views\Solutions\eRegulations.aspx" />
     <Content Include="Views\Solutions\DatacapCapture.aspx" />
-    <Content Include="Views\Solutions\DBExportCapture.aspx" />
-    <Content Include="Views\Solutions\DocumentComparison.aspx" />
-    <Content Include="Views\Solutions\NavisionConnector.aspx" />
     <Content Include="Views\Solutions\FileNetSoftware.aspx" />
-    <Content Include="Views\Support\EmailSupport.aspx" />
-    <Content Include="Views\Support\CallSupport.aspx" />
-    <Content Include="Views\Products\DataMaskRedaction.aspx" />
     <Content Include="Views\Solutions\CaseManager.aspx" />
     <Content Include="Views\Services\DocumentImport.aspx" />
     <Content Include="Views\Company\CompanyProfile.aspx" />
-    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Test\Index.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -594,7 +616,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Images\Default\accent.png" />
     <Content Include="Images\Default\bullet.png" />
@@ -620,6 +641,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Fairfax.Core\Fairfax.Core.csproj">
+      <Project>{ee503621-6dab-4d80-8dbd-3e08358f1d34}</Project>
+      <Name>Fairfax.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

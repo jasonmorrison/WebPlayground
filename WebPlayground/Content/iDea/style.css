@@ -667,7 +667,10 @@ tbody {
 .parallax-bg-3 {
 	background: url("../images/parallax-bg-3.jpg") 50% 0px no-repeat;
 }
-
+/*JM Custom Graph Style Background*/
+.parallax-bg-4 {
+	background: url("../images/parallax-bg-4.png") 50% 0px no-repeat;
+}
 /* Custom Grid
 ---------------------------------- */
 .grid-space-20 {
@@ -3796,7 +3799,10 @@ a.overlay.small i {
 	.logo img,
 	.header-small .logo img {
 		margin: 0 auto;
-	}
+        
+        /* JM Added 3/23/2015 to prevent very large logo on small browser realestate*/
+        max-width: 300px;
+	}    
 	.site-slogan {
 		text-align: center;
 	}
@@ -4975,16 +4981,16 @@ ul.tweets li span {
 	-moz-border-radius: 100%;
 	border-radius: 100%;
 }
-.tparrows.round:before {
+/*.tparrows.round:before {
 	font-family: 'fontello';
 	font-size: 24px;
 	content: '\e87c';
 	line-height: 52px;
 	display: inline-block;
-}
-.tparrows.round.tp-rightarrow:before {
+}*/
+/*.tparrows.round.tp-rightarrow:before {
 	content: '\e87d';
-}
+}*/
 .tparrows.round:hover {
 	color: #ffffff;
 	background-color: #e84c3d;

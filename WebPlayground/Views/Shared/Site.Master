@@ -7,11 +7,12 @@
     <!-- Mobile Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <meta name="description" content="iDea a Bootstrap-based, Responsive HTML5 Template">
-    <meta name="author" content="htmlcoder.me">
+    <meta name="description" content="Fairfax Data Systems: Enterprise Content Management Specialists">
+    <meta name="author" content="Fairfax Data Systems">
+    <link rel="shortcut icon" href="<%: Url.Content("~/Images/FFX/ffx_icon.ico") %>" />
 
     <title>
-        <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+        Fairfax - <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
     </title>
 
     <!-- Favicon -->
@@ -196,7 +197,7 @@
                             <!-- logo -->
                             <div class="logo">
                                 <a href="<%: Url.Action("Index", "Home") %>">
-                                    <img id="logo" src="<%: Url.Content("~/Images/FFX/FFX-logo.jpg") %>" alt="iDea"></a>
+                                    <img id="logo" src="<%: Url.Content("~/Images/FFX/FFX-logo.jpg") %>" alt="Fairfax Data Systems"></a>
                             </div>
 
                             <!-- name-and-slogan -->
@@ -236,10 +237,10 @@
                                         <!-- Collect the nav links, forms, and other content for toggling -->
                                         <div class="collapse navbar-collapse" id="navbar-collapse-1">
                                             <ul class="nav navbar-nav navbar-right">
-                                                <li class="dropdown active">
+                                                <li class="dropdown" id="CompanyTab">
                                                     <a href="index.html" class="dropdown-toggle" data-toggle="dropdown">Company</a>
                                                     <ul class="dropdown-menu">
-                                                        <li role="presentation" class="active">
+                                                        <li role="presentation">
                                                             <a role="menuitem" tabindex="-1" href="<%: Url.Action("CompanyProfile", "Company") %>">Company Profile
                                                             </a>
                                                         </li>
@@ -270,7 +271,7 @@
                                                         <%-- Our team should live in the about us area.  Add a /Company/EmployeeProfile/Id for individual employee details --%>
                                                     </ul>
                                                 </li>
-                                                <li class="dropdown">
+                                                <li class="dropdown" id="ServicesTab">
                                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services</a>
                                                     <ul class="dropdown-menu">
                                                         <li role="presentation">
@@ -303,7 +304,7 @@
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li class="dropdown">
+                                                <li class="dropdown" id="SolutionsTab">
                                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions</a>
                                                     <ul class="dropdown-menu">
                                                         <li role="presentation">
@@ -314,7 +315,7 @@
                                                             <a role="menuitem" tabindex="-1" href="<%: Url.Action("DatacapCapture", "Solutions") %>">Datacap Capture Solutions
                                                             </a>
                                                         </li>
-                                                        <li role="presentation">
+                                                        <%--<li role="presentation">
                                                             <a role="menuitem" tabindex="-1" href="<%: Url.Action("DBExportCapture", "Solutions") %>">DB Export Capture Component
                                                             </a>
                                                         </li>
@@ -325,6 +326,14 @@
                                                         <li role="presentation">
                                                             <a role="menuitem" tabindex="-1" href="<%: Url.Action("NavisionConnector", "Solutions") %>">P8 Navision Connector
                                                             </a>
+                                                        </li>--%>
+                                                        <li role="presentation">
+                                                            <a role="menuitem" tabindex="-1" href="<%: Url.Action("SmartPAL", "Solutions") %>">SmartPAL
+                                                            </a>
+                                                        </li>
+                                                        <li role="presentation">
+                                                            <a role="menuitem" tabindex="-1" href="<%: Url.Action("eRegulations", "Solutions") %>">eRegulations
+                                                            </a>
                                                         </li>
                                                         <li role="presentation">
                                                             <a role="menuitem" tabindex="-1" href="<%: Url.Action("FileNetSoftware", "Solutions") %>">IBM FileNet Software
@@ -333,8 +342,9 @@
                                                         <%-- Add a solutions portfolio page with a Services/Portfolio/ID where id brings up a solution profile --%>
                                                     </ul>
                                                 </li>
-                                                <li class="dropdown">
-                                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products</a>
+                                                <li id="ProductsTab">
+                                                    <a href="<%: Url.Action("Index", "Products") %>">Products</a>
+                                                    <%--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products</a>
                                                     <ul class="dropdown-menu">
                                                         <li role="presentation">
                                                             <a role="menuitem" tabindex="-1" href="<%: Url.Action("DataMaskRedaction", "Products") %>">DataMask Redaction
@@ -352,9 +362,9 @@
                                                             <a role="menuitem" tabindex="-1" href="<%: Url.Action("NavisionConnector", "Products") %>">P8 Navision Connector
                                                             </a>
                                                         </li>
-                                                    </ul>
+                                                    </ul>--%>
                                                 </li>
-                                                <li class="dropdown">
+                                                <%--<li class="dropdown">
                                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us</a>
                                                     <ul class="dropdown-menu">
                                                         <li role="presentation">
@@ -365,10 +375,10 @@
                                                             <a role="menuitem" tabindex="-1" href="<%: Url.Action("EmailSupport", "Support") %>">Email Support
                                                             </a>
                                                         </li>
-                                                    </ul>
-                                                    <%-- Add an 'About Support Contracts', Consolidate pages, add a submit ticket page, add a contact for sales and or estimate --%>
-                                                </li>
-                                                <li>
+                                                    </ul>                                                    
+                                                </li>--%>
+                                                <%-- For Support: Add an 'About Support Contracts', Consolidate pages, add a submit ticket page, add a contact for sales and or estimate --%>
+                                                <li  id="NewsTab">
                                                     <a href="<%: Url.Action("Index", "News") %>">News</a>
                                                     <%-- Add /News/ArticleID to bring up a single blog post style to show article details --%>
                                                 </li>
@@ -410,19 +420,22 @@
                         <div class="col-md-6">
                             <div class="footer-content">
                                 <div class="logo-footer">
-                                    <img id="logo-footer" style="background-color: transparent;" src="<%: Url.Content("~/Images/FFX/FFX-logo_gray.png") %>" alt="Fairfax Data Systems Logo">
+                                    <a href="<%: Url.Action("Index", "Home") %>">
+                                        <img style="max-width: 260px;" class="img-responsive" id="logo-footer" src="<%: Url.Content("~/Images/FFX/FFX-logo_gray.png") %>" alt="Fairfax Data Systems Logo">
+                                    </a>
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <p>Lorem ipsum dolor sit amet, consect tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven.</p>
+                                        <p>Providing professional services and expertise to help your business be more effective</p>
                                         <ul class="social-links circle">
                                             <li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
                                             <li class="youtube"><a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
                                             <li class="facebook"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
                                             <%--<li class="twitter"><a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a></li>
                                             <li class="googleplus"><a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a></li>
-                                            <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>--%>                                            
+                                            <li class="skype"><a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a></li>--%>
                                         </ul>
+                                        <a href="<%: Url.Action("CompanyProfile", "Company") %>" class="link"><span>Read More</span></a>
                                     </div>
                                     <div class="col-sm-6">
                                         <ul class="list-icons">
@@ -437,14 +450,20 @@
                                                 </div>
                                             </li>
                                             <li><i class="fa fa-phone pr-10"></i>+1.860.354.4472</li>
-                                            <li><i class="fa fa-phone pr-10"></i>Toll Free: (800) 434-8288 (within the United States)</li>
+                                            <li>
+                                                <div style="display: table-row;">
+                                                    <i style="display: table-cell;" class="fa fa-phone pr-10"></i>
+                                                    <div style="display: table-cell;">
+                                                        Toll Free: (800) 434-8288 (within the United States)
+                                                    </div>
+                                                </div>
+                                            </li>
                                             <li><i class="fa fa-fax pr-10"></i>+1.860.354.3910</li>
                                             <li><i class="fa fa-envelope-o pr-10"></i><a href="mailto:info@fairfaxdatasystems.com" target="_blank">info@fairfaxdatasystems.com</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <a href="page-about.html" class="link"><span>Read More</span></a>
                             </div>
                         </div>
                         <div class="space-bottom hidden-lg hidden-xs"></div>
@@ -570,13 +589,13 @@
                                 </div>
                                 <div class="collapse navbar-collapse" id="navbar-collapse-2">
                                     <ul class="nav navbar-nav">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="page-about.html">Company</a></li>
-                                        <li><a href="blog-right-sidebar.html">Services</a></li>
-                                        <li><a href="portfolio-3col.html">Solutions</a></li>
-                                        <li><a href="page-contact.html">Products</a></li>
-                                        <li><a href="page-contact.html">Contact Us</a></li>
-                                        <li><a href="page-contact.html">News</a></li>
+                                        <li><a href="<%: Url.Action("Index", "Home") %>">Home</a></li>
+                                        <li><a href="<%: Url.Action("Index", "Company") %>">Company</a></li>
+                                        <li><a href="<%: Url.Action("Index", "Services") %>">Services</a></li>
+                                        <li><a href="<%: Url.Action("Index", "Solutions") %>">Solutions</a></li>
+                                        <li><a href="<%: Url.Action("Index", "Products") %>">Products</a></li>
+                                        <li><a href="<%: Url.Action("ContactUs", "Company") %>">Contact Us</a></li>
+                                        <li><a href="<%: Url.Action("Index", "News") %>">News</a></li>
                                     </ul>
                                 </div>
                             </nav>
@@ -597,6 +616,17 @@
     <!-- jQuery REVOLUTION Slider  -->
     <script type="text/javascript" src="<%: Url.Action("../Scripts/iDea/plugins/rs-plugin/jquery.themepunch.tools.min.js") %>"></script>
     <script type="text/javascript" src="<%: Url.Action("../Scripts/iDea/plugins/rs-plugin/jquery.themepunch.revolution.min.js") %>"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#<%: ViewContext.RouteData.Values["Controller"].ToString() %>Tab").addClass("active");
+            //$("#tabs a").focus(function () {
+            //    $(this).parents("li").addClass("hover");
+            //}).blur(function () {
+            //    $(this).parents("li").removeClass("hover");
+            //});
+        });
+    </script>
 
     <asp:ContentPlaceHolder ID="ScriptsSection" runat="server" />
 </body>

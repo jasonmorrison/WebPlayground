@@ -10,27 +10,27 @@ namespace WebPlayground.Controllers
     {
         public ActionResult Index()
         {
-            return View("DataMaskRedaction");
-        }
-
-        public ActionResult ComparePlugin()
-        {
             return View();
         }
 
-        public ActionResult DataMaskRedaction()
-        {
-            return View();
-        }
+        //public ActionResult ComparePlugin()
+        //{
+        //    return View();
+        //}
 
-        public ActionResult DVClientApplication()
-        {
-            return View();
-        }
+        //public ActionResult DataMaskRedaction()
+        //{
+        //    return View();
+        //}
 
-        public ActionResult NavisionConnector()
-        {
-            return View();
-        }
+        //public ActionResult DVClientApplication()
+        //{
+        //    return View();
+        //}
+
+        //public ActionResult NavisionConnector()
+        //{
+        //    return View();
+        //}
     }
 }
